@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealMoon</title>
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- The following link is to the Font "Dosis" which I used -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,700">
+</head>
+<body>
+    </div>
+        <div class="backbanner">
+            <video autoplay muted loop>
+                <source src="files/moonvid.mp4" type="video/mp4">
+            </video>
+            <!--Mute button for the music right here-->
+            <div class="mutebutton">
+               <img src="files/soundon.png" id="icon" width="37" height="37">
+            </div>
+            <audio autoplay loop id="BackgroundSong">
+                <source src="files/HappyLoop.mp3" type="audio/mp3">
+            </audio>
+          
+            <div class="button-area">
+                <div class="button-link">
+                    <!--make sure, that you put the "https://" before your website link-->
+                <a href="https://null/" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>              
+                    
+                    Purchase</a>
+                </div>
+
+                <div class="button-scan">
+                    <!--make sure, that you put the "https://" before your website link-->
+                <a href="https://bscscan.com/token/0xD0B5678E2A6C6096cBF9eE284de673A54FBAb2A0" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>              
+                    
+                    BSCScan</a>
+                </div>
+
+                <div class="button-pdf">
+                    <!-- Here you have to link your PDF Document which you want to use-->
+                <a href="files/RealMoonPaper.pdf" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    RealMoonPaper</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--This is the JS for the Music Mute button-->
+    <script>
+        var BackgroundSong = document.getElementById("BackgroundSong");
+        var icon = document.getElementById("icon");
+        
+        icon.onclick = function () {
+            if(BackgroundSong.paused) {
+                BackgroundSong.play();
+                icon.src = "files/soundon.png";
+            } else {
+                BackgroundSong.pause();
+                icon.src = "files/soundoff.png";
+             }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

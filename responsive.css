@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1460px){
+ /* Button POSITIONING Responsive*/
+
+ .button-area {
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .button-pdf {
+    margin-top: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    }
+    
+    .button-scan {
+        margin-top: 50vh;
+
+        margin-left: auto;
+        margin-right: auto;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    }
+    
+    .button-link {
+        margin-top: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+    
+    }
+
+    .mutebutton{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hambmenu {
+        top: 55px;
+        right: 50px;
+    }
+    
+}
+/*only smartphones and tablets*/
+@media (min-aspect-ratio: 16/9) {
+    .backbanner video {
+        position: fixed;
+        width:100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .backbanner video { 
+        position: fixed;
+        width:auto;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+
+/*everything over 1920x1080*/
+@media only screen and (min-width: 1921px){
+    .button-pdf {
+        margin-top: 75vh;
+        position: unset;
+        margin-left: auto;
+        margin-right: 700px;
+        font-size: 18px;
+        cursor: pointer;
+
+        }
+        
+        .button-scan {
+            margin-top: 75vh;
+            position: unset;
+            margin-left: auto;
+            margin-right: auto;
+        font-size: 18px;
+        cursor: pointer;
+
+        }
+        
+        .button-link {
+            margin-top: 75vh;
+            margin-left: 700px;
+            margin-right: auto;
+            position: unset;
+        font-size: 18px;
+        cursor: pointer;
+        
+        }
+
+}
